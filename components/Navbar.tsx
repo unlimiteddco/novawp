@@ -22,16 +22,15 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-[#030303]/80 backdrop-blur-md border-b border-white/5' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-[#030303]/80 backdrop-blur-md border-b border-white/5' : 'bg-transparent'
+        }`}
     >
       <Container>
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-tr from-purple-500 to-orange-500">
-               <Sparkles className="w-5 h-5 text-white" />
+              <Sparkles className="w-5 h-5 text-white" />
             </div>
             <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
               NovaWP
@@ -40,13 +39,17 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-8">
-            {['Features', 'Pricing', 'Resources'].map((item) => (
+            {[
+              { name: 'Features', href: '#features' },
+              { name: 'Pricing', href: '#pricing' },
+              { name: 'Real examples', href: '#showcase' }
+            ].map((item) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
+                key={item.name}
+                href={item.href}
                 className="text-sm font-medium text-gray-400 hover:text-white transition-colors"
               >
-                {item}
+                {item.name}
               </a>
             ))}
           </div>
@@ -79,13 +82,18 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
             className="md:hidden bg-[#0a0a0a] border-b border-white/10 overflow-hidden"
           >
             <Container className="py-4 space-y-4">
-              {['Features', 'Pricing', 'Resources'].map((item) => (
+              {[
+                { name: 'Features', href: '#features' },
+                { name: 'Pricing', href: '#pricing' },
+                { name: 'Real examples', href: '#showcase' }
+              ].map((item) => (
                 <a
-                  key={item}
-                  href="#"
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className="block text-base font-medium text-gray-300 hover:text-white"
                 >
-                  {item}
+                  {item.name}
                 </a>
               ))}
               <div className="pt-4 border-t border-white/10 flex flex-col gap-3">

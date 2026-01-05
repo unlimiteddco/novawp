@@ -17,7 +17,7 @@ const examples = [
 
 const Showcase: React.FC = () => {
   return (
-    <section className="py-24 bg-[#030303] relative border-t border-white/5">
+    <section id="showcase" className="py-24 bg-[#030303] relative border-t border-white/5">
       <Container>
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h2 
