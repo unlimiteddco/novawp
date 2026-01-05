@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5">
-          <p className="text-gray-600 text-sm">© 2024 NovaWP Inc. Built with love by Unlimitedd.co</p>
+          <p className="text-gray-600 text-sm">© 2026 NovaWP Inc. Built with love by Unlimitedd.co</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-600 hover:text-white text-sm transition-colors">Privacy</a>
             <a href="#" className="text-gray-600 hover:text-white text-sm transition-colors">Terms</a>
