@@ -18,7 +18,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[500px] bg-purple-500/20 blur-[100px] rounded-full opacity-50 pointer-events-none" />
 
       <Container className="relative z-10 flex flex-col items-center text-center">
-        
+
         {/* Pill Label */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
           </span>
           <span className="text-xs font-medium text-purple-200 uppercase tracking-wide">
-            v2.0 is now live
+            Early access is now live
           </span>
         </motion.div>
 
@@ -55,7 +55,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-lg md:text-xl text-gray-400 max-w-2xl mb-10 leading-relaxed"
         >
-          The first AI-native builder that generates Elementor-ready websites in 60 seconds. 
+          The first AI-native builder that generates Elementor-ready websites in 60 seconds.
           Prompt to production with premium hosting included.
         </motion.p>
 
@@ -78,18 +78,18 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
         <div className="mt-20 w-full max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {[
-              { 
-                img: "https://cdn.uicore.pro/2025/11/voltrive.webp", 
+              {
+                img: "https://cdn.uicore.pro/2025/11/voltrive.webp",
                 title: "Voltrive EV",
-                tag: "Automotive" 
+                tag: "Automotive"
               },
-              { 
-                img: "https://cdn.uicore.pro/2025/11/gardenify.webp", 
+              {
+                img: "https://cdn.uicore.pro/2025/11/gardenify.webp",
                 title: "Gardenify",
                 tag: "Services"
               },
-              { 
-                img: "https://cdn.uicore.pro/2025/07/globchart.webp", 
+              {
+                img: "https://cdn.uicore.pro/2025/07/globchart.webp",
                 title: "GlobChart",
                 tag: "SaaS"
               }
@@ -104,7 +104,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
               >
                 {/* Card Container */}
                 <div className="relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm overflow-hidden shadow-2xl shadow-black/50 transition-colors hover:border-white/20">
-                  
+
                   {/* Browser Header */}
                   <div className="absolute top-0 left-0 right-0 h-8 bg-black/40 backdrop-blur-md z-10 border-b border-white/5 flex items-center px-4 gap-2">
                     <div className="flex gap-1.5 opacity-60">
@@ -116,28 +116,28 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
 
                   {/* Image */}
                   <div className="relative aspect-[3/4] overflow-hidden">
-                     <img 
-                       src={item.img} 
-                       alt={item.title} 
-                       className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-110" 
-                     />
-                     
-                     {/* Overlay Gradient */}
-                     <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
-                     
-                     {/* Floating Badge */}
-                     <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                        <div className="flex flex-col">
-                           <span className="text-white font-semibold text-lg drop-shadow-lg">{item.title}</span>
-                           <span className="text-gray-300 text-xs">{item.tag}</span>
-                        </div>
-                        <div className="bg-white text-black p-2 rounded-full">
-                           <ArrowRight className="w-4 h-4" />
-                        </div>
-                     </div>
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-110"
+                    />
+
+                    {/* Overlay Gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+
+                    {/* Floating Badge */}
+                    <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                      <div className="flex flex-col">
+                        <span className="text-white font-semibold text-lg drop-shadow-lg">{item.title}</span>
+                        <span className="text-gray-300 text-xs">{item.tag}</span>
+                      </div>
+                      <div className="bg-white text-black p-2 rounded-full">
+                        <ArrowRight className="w-4 h-4" />
+                      </div>
+                    </div>
                   </div>
                 </div>
-                
+
                 {/* Glow Effect */}
                 <div className="absolute -inset-2 bg-purple-500/20 rounded-[20px] blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
               </motion.div>
