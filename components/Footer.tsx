@@ -27,9 +27,9 @@ const Footer: React.FC = () => {
           <div className="col-span-2 md:col-span-2">
             <h4 className="font-semibold text-white mb-4">Subscribe to updates</h4>
             <div className="flex gap-2">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
+              <input
+                type="email"
+                placeholder="Enter your email"
                 className="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-purple-500 w-full max-w-xs"
               />
               <button className="bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors">
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5">
-          <p className="text-gray-600 text-sm">© 2024 NovaWP Inc. All rights reserved.</p>
+          <p className="text-gray-600 text-sm">© 2024 NovaWP Inc. Built with love by Unlimitedd.co</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-600 hover:text-white text-sm transition-colors">Privacy</a>
             <a href="#" className="text-gray-600 hover:text-white text-sm transition-colors">Terms</a>
